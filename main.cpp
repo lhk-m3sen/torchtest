@@ -48,7 +48,7 @@ int FilterTest(string rgbPath, vector<string> &labels, bool cudaOk)
     }
     else
     {
-        inputTensor = torch::from_blob(fNData, {1, AIFILTER_IMG, AIFILTER_IMG, 3});
+        inputTensor = torch::from_blob(matColor.data, {1, AIFILTER_IMG, AIFILTER_IMG, 3});
     }
     inputTensor = inputTensor.permute({0, 3, 1, 2});
 
