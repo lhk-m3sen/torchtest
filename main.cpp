@@ -92,7 +92,7 @@ int main(int, char **)
     vector<string> labels;
 
     string modelPath = "../../model.pt";
-    string rgbPath = "../../test002.jpg";
+    string rgbPath = "../../color.jpg";
     string labelPath = "../../label.txt";
 
     bool isCuda = torch::cuda::is_available() ? true : false;
