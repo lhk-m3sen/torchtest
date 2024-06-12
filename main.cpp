@@ -3,8 +3,6 @@
 using namespace std;
 using namespace cv;
 
-float fNData[AIFILTER_IMG * AIFILTER_IMG][3];
-
 bool isAiModelAvailable;
 torch::jit::script::Module module;
 
